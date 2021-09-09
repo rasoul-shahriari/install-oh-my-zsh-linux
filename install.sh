@@ -123,14 +123,6 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-alias ll='colorls -lA --sd --group-directories-first'
-alias ls='colorls --group-directories-first'
-
-LS_COLORS='di=1:fi=0:ln=31:pi=5:so=5:bd=5:cd=5:or=31:mi=0:ex=36:*.rpm=90'
-export LS_COLORS
-
-POWERLEVEL9K_MODE='nerdfont-complete'
-
 alias gpup='git push --set-upstream origin $(current_branch)'
 
 alias current_branch='git rev-parse --abbrev-ref HEAD'
@@ -160,9 +152,6 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $ZSH_CUSTOM/p
 echo "================================================================="
 echo "zsh-autosuggestions and zsh-syntax-highlighting Installed"
 echo "================================================================="
-
-apt install ruby-full
-gem install colorls
 
 source ~/.zshrc
 
